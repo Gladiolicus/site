@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <body bgcolor="#175">
+    <title>SPMusic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <font color="#FFFFFF" size="7">MineMusic</font>
+
+  </head>
+   <body>
+    <h1>Покупка билетов</h1>
+     <main>
+      <section class="wrapper">
+        <form class="form-search">
+          <div class="wrapper__search">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    button.default {
+      background: white;
+      width: 20px;
+      height: 20px;
+      font-size: 15pt;
+      transition: background 9999999s;
+    }
+
+    button.default:active {
+      background: gray;
+      transition: background 0s;
+    }
+
+  </style>
+          <td><button class="default"> </button></td>
+          <td><button class="default"> </button></td>
+          <td><button class="default"> </button></td>
+          <td><button class="default"> </button></td>
+          <td><button class="default"> </button></td>
+          <td><button class="default"> </button></td>
+          <td><button class="default"> </button></td>
+          <td><button class="default"> </button></td>
+          <td><button class="default"> </button></td>
+          <td><button class="default"> </button></td>
+<div class="container">
+  <img src="https://media.discordapp.net/attachments/1041998021740724315/1082608409850953809/81410cc5b79a44fd.png" alt="Snow">
+  <button class="btn">-</button>
+</div>
+</div>
+        </form>
+      </section>
+      <section class="wrapper">
+        <section
+          class="wrapper__ticket"
+          id="cheapest-ticket"
+          style="display: none;"
+        ></section>
+        <section
+          class="block__ticket"
+          id="other-cheap-tickets"
+          style="display: none;"
+        ></section>
+      </section>
+    </main>
+    <script>
+function createButton(context, func) {
+    var button = document.createElement("input");
+    button.type = "button";
+    button.value = "buy";
+    button.onclick = func;
+    context.appendChild(button);
+}
+
+window.onload = function() {
+    createButton(document.body, function() {
+        highlight(this.parentNode.childNodes[1]);
+        // Example of different context, copied function etc
+        // createButton(this.parentNode, this.onclick);
+    });
+};
+    </script>
+  </body>
+</html>
